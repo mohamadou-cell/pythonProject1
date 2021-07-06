@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+    <tr>
+        <th>Titre_minier</th>
+        <th>Substance</th>
+        <th>Commune</th>
+        <th>Autres_subst</th>
+    </tr>
+    {% for i in Titre_substance_rel %}
+    <tr>
+
+        <td>{{i.Titre_minier}}</td>
+        <td>{{i.Substance}}</td>
+        <td>{{i.Commune}}</td>
+        <td>{{i.Autres_subst}}</td>
+
+
+
+    </tr>
+    {% endfor %}
+
+    </table>
+
+</body>
+</html>

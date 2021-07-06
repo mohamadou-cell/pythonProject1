@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+    <tr>
+        <th>Formulaire</th>
+        <th>Titre_minier</th>
+        <th>Typ_geophysique</th>
+        <th>Typ_geochimie_autre</th>
+        <th>Nbr_ligne</th>
+        <th>Superficie_km2</th>
+        <th>Altitude_vol</th>
+        <th>Distance_lign_vol</th>
+        <th>Magnetique</th>
+        <th>Radiometrique</th>
+        <th>Electromagnetiq</th>
+    </tr>
+    {% for i in Geophysique %}
+    <tr>
+
+        <td>{{i.Formulaire}}</td>
+        <td>{{i.Titre_minier}}</td>
+        <td>{{i.Typ_geophysique}}</td>
+        <td>{{i.Typ_geochimie_autre}}</td>
+        <td>{{i.Nbr_ligne}}</td>
+        <td>{{i.Superficie_km2}}</td>
+        <td>{{i.Altitude_vol}}</td>
+        <td>{{i.Distance_lign_vol}}</td>
+        <td>{{i.Magnetique}}</td>
+        <td>{{i.Radiometrique}}</td>
+        <td>{{i.electromagnetiq}}</td>
+
+
+
+    </tr>
+    {% endfor %}
+
+    </table>
+
+</body>
+</html>

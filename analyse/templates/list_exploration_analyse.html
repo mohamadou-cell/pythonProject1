@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+    <tr>
+        <th>Formulaire</th>
+        <th>Titre_minier</th>
+        <th>Typ_analyse</th>
+        <th>Pays</th>
+        <th>Typ_analyse_autre</th>
+        <th>Typ_analyse_autre</th>
+        <th>Nom_laboratoire</th>
+    </tr>
+    {% for i in Exploration_analyse %}
+    <tr>
+
+        <td>{{i.Formulaire}}</td>
+        <td>{{i.Titre_minier}}</td>
+        <td>{{i.Typ_analyse}}</td>
+        <td>{{i.Pays}}</td>
+        <td>{{i.Typ_analyse_autre}}</td>
+        <td>{{i.Typ_analyse_autre}}</td>
+        <td>{{i.Nom_laboratoire}}</td>
+
+
+
+    </tr>
+    {% endfor %}
+
+    </table>
+
+</body>
+</html>

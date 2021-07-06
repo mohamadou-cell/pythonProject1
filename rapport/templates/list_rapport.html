@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+    <tr>
+        <th>Rapport_nom</th>
+        <th>Rapport_annuel</th>
+        <th>Rapport_trimestriel</th>
+        <th>Rapport_entreprise</th>
+        <th>Rapport_actif</th>
+        <th>Rapport_excel</th>
+    </tr>
+    {% for i in Rapport %}
+    <tr>
+
+        <td>{{i.Rapport_nom}}</td>
+        <td>{{i.Rapport_annuel}}</td>
+        <td>{{i.Rapport_trimestriel}}</td>
+        <td>{{i.Rapport_entreprise}}</td>
+        <td>{{i.Rapport_actif}}</td>
+        <td>{{i.Rapport_excel}}</td>
+
+
+
+    </tr>
+    {% endfor %}
+
+    </table>
+
+</body>
+</html>

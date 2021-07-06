@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+    <tr>
+        <th>Formulaire</th>
+        <th>Substance</th>
+        <th>Qte_brut</th>
+        <th>Cout_production</th>
+        <th>Qte_transform</th>
+    </tr>
+    {% for i in Extraction_brut %}
+    <tr>
+
+        <td>{{i.Formulaire}}</td>
+        <td>{{i.Substance}}</td>
+        <td>{{i.Qte_brut}}</td>
+        <td>{{i.Cout_production}}</td>
+        <td>{{i.Qte_transform}}</td>
+
+
+
+    </tr>
+    {% endfor %}
+
+    </table>
+
+</body>
+</html>

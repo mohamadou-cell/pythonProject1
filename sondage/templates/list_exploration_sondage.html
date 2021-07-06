@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+    <tr>
+        <th>Formulaire</th>
+        <th>Titre_minier</th>
+        <th>Typ_sondage</th>
+        <th>Inters_u_mesr_id</th>
+        <th>Typ_sondage_autre</th>
+        <th>Grille_maille_desc</th>
+        <th>Metrage</th>
+        <th>Intervalle</th>
+        <th>Intersection</th>
+        <th>Teneur</th>
+    </tr>
+    {% for i in Exploration_sondage %}
+    <tr>
+
+        <td>{{i.Formulaire}}</td>
+        <td>{{i.Titre_minier}}</td>
+        <td>{{i.Typ_sondage}}</td>
+        <td>{{i.Inters_u_mesr_id}}</td>
+        <td>{{i.Typ_sondage_autre}}</td>
+        <td>{{i.Grille_maille_desc}}</td>
+        <td>{{i.Metrage}}</td>
+        <td>{{i.Intervalle}}</td>
+        <td>{{i.Intersection}}</td>
+        <td>{{i.Teneur}}</td>
+
+
+
+    </tr>
+    {% endfor %}
+
+    </table>
+
+</body>
+</html>

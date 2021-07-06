@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+    <tr>
+        <th>Formulaire</th>
+        <th>Titre_minier</th>
+        <th>Produit</th>
+        <th>Typ_resrc_reserv</th>
+        <th>Typ_resrc_reserv_autre</th>
+        <th>Tonnage</th>
+        <th>Unite_mesr</th>
+        <th>Unite_mesr_autre</th>
+        <th>Teneur</th>
+        <th>Teneur_coupure</th>
+        <th>Autre_substances</th>
+    </tr>
+    {% for i in Exploratn_resrc_reserv %}
+    <tr>
+
+        <td>{{i.Formulaire}}</td>
+        <td>{{i.Titre_minier}}</td>
+        <td>{{i.Produit}}</td>
+        <td>{{i.Typ_resrc_reserv}}</td>
+        <td>{{i.Typ_resrc_reserv_autre}}</td>
+        <td>{{i.Tonnage}}</td>
+        <td>{{i.Unite_mesr}}</td>
+        <td>{{i.Unite_mesr_autre}}</td>
+        <td>{{i.Teneur}}</td>
+        <td>{{i.Teneur_coupure}}</td>
+        <td>{{i.Autre_substances}}</td>
+
+
+
+    </tr>
+    {% endfor %}
+
+    </table>
+
+</body>
+</html>

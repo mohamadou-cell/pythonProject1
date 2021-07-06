@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+    <tr>
+        <th>Exportation_id</th>
+        <th>Formulaire</th>
+        <th>Produit</th>
+        <th>Pays</th>
+        <th>Qte_vendu_pays</th>
+        <th>Val_produit</th>
+    </tr>
+    {% for i in Exportation_brut %}
+    <tr>
+
+        <td>{{i.Exportation_id}}</td>
+        <td>{{i.Formulaire}}</td>
+        <td>{{i.Produit}}</td>
+        <td>{{i.Pays}}</td>
+        <td>{{i.Qte_vendu_pays}}</td>
+        <td>{{i.Val_produit}}</td>
+
+
+
+    </tr>
+    {% endfor %}
+
+    </table>
+
+</body>
+</html>

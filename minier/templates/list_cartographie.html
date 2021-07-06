@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+    <tr>
+        <th>Formulaire</th>
+        <th>Titre_minier</th>
+        <th>Typ_cartgrph</th>
+        <th>Typ_cartgrph_autre</th>
+        <th>Echelle</th>
+        <th>Grille_maille</th>
+        <th>Prctg_affleurmnt</th>
+        <th>Surface_km2</th>
+    </tr>
+    {% for i in Cartographie %}
+    <tr>
+
+        <td>{{i.Formulaire}}</td>
+        <td>{{i.Titre_minier}}</td>
+        <td>{{i.Typ_cartgrph}}</td>
+        <td>{{i.Typ_cartgrph_autre}}</td>
+        <td>{{i.Echelle}}</td>
+        <td>{{i.Grille_maille}}</td>
+        <td>{{i.Prctg_affleurmnt}}</td>
+        <td>{{i.Surface_km2}}</td>
+
+
+
+    </tr>
+    {% endfor %}
+
+    </table>
+
+</body>
+</html>

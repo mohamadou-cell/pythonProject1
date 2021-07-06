@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+    <tr>
+        <th>Typ_alteration</th>
+        <th>Mineral</th>
+    </tr>
+    {% for i in Alteration_mineral_rel %}
+    <tr>
+
+        <td>{{i.Typ_alteration}}</td>
+        <td>{{i.Mineral}}</td>
+
+
+
+    </tr>
+    {% endfor %}
+
+    </table>
+
+</body>
+</html>

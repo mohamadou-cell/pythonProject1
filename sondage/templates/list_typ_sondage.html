@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+class Typ_sondage(models.Model):
+    Sondage_desc = models.CharField(max_length=10, null=False, blank=False)
+    actif = models.CharField(max_length=10, null=False, blank=False)
+    <table>
+    <tr>
+        <th>Sondage_desc</th>
+        <th>Actif</th>
+    </tr>
+    {% for i in Typ_sondage %}
+    <tr>
+
+        <td>{{i.Sondage_desc}}</td>
+        <td>{{i.actif}}</td>
+
+
+
+    </tr>
+    {% endfor %}
+
+    </table>
+
+</body>
+</html>

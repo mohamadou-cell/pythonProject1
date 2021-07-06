@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+    <tr>
+        <th>Nature_tminier_cd</th>
+        <th>Nom_nature</th>
+    </tr>
+    {% for i in Nature_titre_minier %}
+    <tr>
+
+        <td>{{i.Nature_tminier_cd}}</td>
+        <td>{{i.nom_nature}}</td>
+
+    </tr>
+    {% endfor %}
+
+    </table>
+
+</body>
+</html>

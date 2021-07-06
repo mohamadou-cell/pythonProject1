@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+    <tr>
+        <th>Entreprise</th>
+        <th>Titre_minier</th>
+        <th>Tranchee_desc</th>
+        <th>Longueur</th>
+        <th>Profondeur</th>
+        <th>Faibl_intervalle</th>
+        <th>Faibl_intersectn</th>
+        <th>Faibl_u_mesr_id</th>
+        <th>Moyen_intervalle</th>
+        <th>Moyen_intersection</th>
+        <th>Moyen_u_mesr_id</th>
+        <th>Elev_intervalle</th>
+        <th>Elev_intersectn</th>
+        <th>Elev_u_mesr_id</th>
+    </tr>
+    {% for i in Tranchee %}
+    <tr>
+
+        <td>{{i.Entreprise}}</td>
+        <td>{{i.Titre_minier}}</td>
+        <td>{{i.Tranchee_desc}}</td>
+        <td>{{i.Longueur}}</td>
+        <td>{{i.Profondeur}}</td>
+        <td>{{i.Faibl_intervalle}}</td>
+        <td>{{i.Faibl_intersectn}}</td>
+        <td>{{i.Faibl_u_mesr_id}}</td>
+        <td>{{i.Moyen_intervalle}}</td>
+        <td>{{i.Moyen_intersection}}</td>
+        <td>{{i.Moyen_u_mesr_id}}</td>
+        <td>{{i.Elev_intervalle}}</td>
+        <td>{{i.Elev_intersectn}}</td>
+        <td>{{i.Elev_u_mesr_id}}</td>
+
+
+
+    </tr>
+    {% endfor %}
+
+    </table>
+
+</body>
+</html>

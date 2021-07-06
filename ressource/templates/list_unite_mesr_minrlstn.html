@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+    <tr>
+        <th>Unite_mesr_desc</th>
+        <th>Actif</th>
+    </tr>
+    {% for i in Unite_mesr_minrlstn %}
+    <tr>
+
+        <td>{{i.Unite_mesr_desc}}</td>
+        <td>{{i.actif}}</td>
+
+
+
+    </tr>
+    {% endfor %}
+
+    </table>
+
+</body>
+</html>

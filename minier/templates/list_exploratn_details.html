@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+    <tr>
+        <th>Formulaire</th>
+        <th>Titre_minier</th>
+        <th>Exploratn_details_id</th>
+        <th>Nbr_tranchee</th>
+        <th>Nbr_prosp_avance</th>
+        <th>Nbr_prosp_prelmnr</th>
+        <th>Da_saprolit_oxyd</th>
+        <th>Da_saprok</th>
+        <th>Da_roche_saine</th>
+        <th>Da_autre_ind</th>
+        <th>Da_autre_desc</th>
+        <th>Ah_silicificatn</th>
+        <th>Ah_albitisatn</th>
+        <th>Ah_sericitisatn</th>
+        <th>Ah_silicecarbonage</th>
+        <th>Ah_saprolit_oxyd</th>
+        <th>Ah_autre_ind</th>
+        <th>Ah_autre_desc</th>
+        <th>As_sulfur</th>
+        <th>As_pyrite</th>
+        <th>As_calcopyrite</th>
+        <th>As_arsenopyrite</th>
+        <th>As_pyrothite</th>
+        <th>As_autre_ind</th>
+        <th>As_autre_desc</th>
+    </tr>
+    {% for i in Exploratn_details %}
+    <tr>
+
+        <td>{{i.Formulaire}}</td>
+        <td>{{i.Titre_minier}}</td>
+        <td>{{i.Exploratn_details_id}}</td>
+        <td>{{i.Nbr_tranchee}}</td>
+        <td>{{i.Nbr_prosp_avance}}</td>
+        <td>{{i.Nbr_prosp_prelmnr}}</td>
+        <td>{{i.Da_saprolit_oxyd}}</td>
+        <td>{{i.Da_saprok}}</td>
+        <td>{{i.Da_roche_saine}}</td>
+        <td>{{i.Da_autre_ind}}</td>
+        <td>{{i.Da_autre_desc}}</td>
+        <td>{{i.Ah_silicificatn}}</td>
+        <td>{{i.Ah_albitisatn}}</td>
+        <td>{{i.Ah_sericitisatn}}</td>
+        <td>{{i.Ah_silicecarbonage}}</td>
+        <td>{{i.Ah_saprolit_oxyd}}</td>
+        <td>{{i.Ah_autre_ind}}</td>
+        <td>{{i.Ah_autre_desc}}</td>
+        <td>{{i.As_sulfur}}</td>
+        <td>{{i.As_pyrite}}</td>
+        <td>{{i.As_calcopyrite}}</td>
+        <td>{{i.As_arsenopyrite}}</td>
+        <td>{{i.As_pyrothite}}</td>
+        <td>{{i.As_autre_ind}}</td>
+        <td>{{i.As_autre_desc}}</td>
+
+
+
+    </tr>
+    {% endfor %}
+
+    </table>
+
+</body>
+</html>
